@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kryakikrya | Software & Game Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="hero">
+            <div class="profile-section">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <svg class="avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <div class="avatar-decoration"></div>
+                    </div>
+                </div>
+                <h1 class="name">Kryakikrya</h1>
+                <p class="tagline">Software & Game Developer</p>
+                <div class="github-badge">
+                    <a href="https://github.com/Kryakikrya" target="_blank" rel="noopener noreferrer" class="github-link-badge">
+                        <span class="badge-text">Developer Portfolio</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#stack" class="nav-link">Stack</a>
+                <a href="#projects" class="nav-link">Pet Projects</a>
+                <a href="#leetcode" class="nav-link">LeetCode</a>
+            </nav>
+        </header>
+
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="content-card about-card">
+                <p class="about-text">
+                    I'm a software and game developer passionate about creating immersive experiences and solving complex problems.
+                    With expertise in game development, software engineering, and artificial intelligence, I thrive at the intersection
+                    of creativity and technical excellence.
+                </p>
+                <div class="about-grid">
+                    <div class="about-item">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <div class="about-label"><strong>Experience</strong> in building software</div>
+                    </div>
+                    <div class="about-item">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2M8 12h8"/>
+                            </svg>
+                        </div>
+                        <div class="about-label"><strong>Focus</strong> on Unity & Games</div>
+                    </div>
+                    <div class="about-item">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 0l4.24 4.24m-4.24 0l-4.24-4.24m20 5v-16a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16"/>
+                            </svg>
+                        </div>
+                        <div class="about-label"><strong>Continuous</strong> learning & growth</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack" class="section">
+            <h2 class="section-title">My Stack</h2>
+            <div class="technologies-grid">
+                <div class="tech-category">
+                    <h3 class="tech-category-title">Game Development</h3>
+                    <div class="tech-chips">
+                        <span class="tech-chip">Unity</span>
+                        <span class="tech-chip">C#</span>
+                        <span class="tech-chip">Zenject</span>
+                        <span class="tech-chip">VContainer</span>
+                        <span class="tech-chip">UniTask</span>
+                        <span class="tech-chip">UniRx</span>
+                        <span class="tech-chip">Mirror</span>
+                        <span class="tech-chip">MVVM</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3 class="tech-category-title">Backend</h3>
+                    <div class="tech-chips">
+                        <span class="tech-chip">Java</span>
+                        <span class="tech-chip">Artificial Intelligence</span>
+                        <span class="tech-chip">Spring</span>
+                        <span class="tech-chip">PostgreSQL</span>
+                        <span class="tech-chip">Docker</span>
+                        <span class="tech-chip">CI/CD</span>
+                        <span class="tech-chip">Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">Pet Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-card-decoration"></div>
+                    <div class="project-badge">Featured Project</div>
+                    <h3 class="project-title">Space Warriors</h3>
+                    <p class="project-description">
+                        An action-packed space combat game built with Unity featuring dynamic gameplay mechanics
+                        and engaging combat systems.
+                    </p>
+                    <a href="https://github.com/kryakikrya/SpaceWarriors" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View Project
+                        <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/kryakikrya/SpaceWarriors" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.43 9.8 8.2 11.42.6.12.8-.3.8-.6v-1.9c-3.3.7-4-1.6-4-1.6-.7-.9-1.6-1.2-1.6-1.2-1.3-.8.1-.8.1-.8 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.9 1.3 3.6 1.1.1-.7.4-1.1.7-1.4-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.3 1.2.9-.3 1.9-.5 2.9-.6-.1-1 .5-2 1.5-2.7.6.2 1.2.4 1.9.4.7 0 1.3-.2 1.8-.5.7.2 1.4.4 2.2.5-.6 1-1.4 2-1.4 3.4 0 2.7 2 4 2 4 1.1.2 2.2.7 2.2 2.2 0 1.5-1.2 2-2.3 2.4.8.6 1.2 1.5 1.2 2.5 0 1.9-1.5 3-4.5 3v2c0 .1 0 .3.1.4 5 .8 9 4.99 9 10.15 0 6-5.13 11-11.5 11-5.49 0-9.83-4.04-10.77-9C2.7 17.63 8 12 8 12s5.3-.6 8 2c.3-.1.6-.2.9-.3l.2 1.7-.3.4c1.9.5 3.8 1.2 5.6 2.1C18.4 19 24 15.5 24 9 24 3.5 18.7 0 12 0z"/>
+                        </svg>
+                        <span class="link-text">Star on GitHub</span>
+                    </a>
+                </div>
+                <div class="project-card no-image">
+                    <div class="project-title">Mahou Project</div>
+                    <div class="project-subtitle">Ludum Dare 59</div>
+                    <p class="project-description">
+                        Magical-themed game built for Ludum Dare 59 game jam with unique mechanics
+                        and enchanting elements.
+                    </p>
+                    <a href="https://kryakikrya.itch.io/mahou" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Play Game
+                        <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="leetcode" class="section">
+            <h2 class="section-title">LeetCode</h2>
+            <div class="leetcode-section">
+                <div class="leetcode-card">
+                    <div class="leetcode-header">
+                        <div class="leetcode-avatar">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22zm0-14c2.1 0 4 .28 4.5 3h-9c.5-2.72 2.4-3 4.5-3zM12 7c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/>
+                            </svg>
+                        </div>
+                        <div class="leetcode-info">
+                            <span class="leetcode-name">Kryakikrya</span>
+                            <span class="leetcode-tagline">Problem Solver</span>
+                        </div>
+                    </div>
+                    <a href="https://leetcode.com/u/Kryakikrya/" target="_blank" rel="noopener noreferrer" class="leetcode-action">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                        <span>View Profile</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="footer">
+            <p>by Kryakikrya. Built with <svg viewBox="0 0 24 24" fill="currentColor" class="heart"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
