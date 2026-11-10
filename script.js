@@ -1,6 +1,7 @@
 (() => {
     'use strict';
 
+
     const root = document.documentElement;
     const sections = [...document.querySelectorAll('.section')];
     const themeToggle = document.getElementById('theme-toggle');
