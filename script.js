@@ -3,7 +3,6 @@
 
     const root = document.documentElement;
     const sections = [...document.querySelectorAll('.section')];
-    const navLinks = [...document.querySelectorAll('.nav-link')];
     const themeToggle = document.getElementById('theme-toggle');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -20,15 +19,6 @@
     themeToggle?.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
     setTheme(root.dataset.theme || 'dark');
 
-    function setActiveLink(id) {
-        navLinks.forEach((link) => {
-            const active = link.getAttribute('href') === `#${id}`;
-            link.classList.toggle('active', active);
-            if (active) link.setAttribute('aria-current', 'location');
-            else link.removeAttribute('aria-current');
-        });
-    }
-
     document.querySelector('.nav')?.addEventListener('click', (event) => {
         const link = event.target.closest('a.nav-link');
         if (!link) return;
@@ -37,7 +27,6 @@
         event.preventDefault();
         target.scrollIntoView({ behavior: reducedMotion.matches ? 'auto' : 'smooth', block: 'start' });
         history.replaceState(null, '', link.getAttribute('href'));
-        setActiveLink(target.id);
     });
 
     if ('IntersectionObserver' in window) {
@@ -51,12 +40,6 @@
         }, { threshold: 0.08, rootMargin: '0px 0px -35px 0px' });
         sections.forEach((section) => revealObserver.observe(section));
 
-        const navObserver = new IntersectionObserver((entries) => {
-            const visible = entries.filter((entry) => entry.isIntersecting)
-                .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-            if (visible) setActiveLink(visible.target.id);
-        }, { rootMargin: '-25% 0px -60% 0px', threshold: [0, 0.15, 0.4, 0.7] });
-        sections.forEach((section) => navObserver.observe(section));
     } else {
         sections.forEach((section) => section.classList.add('is-visible'));
     }
